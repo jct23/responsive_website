@@ -1,0 +1,219 @@
+body {
+	background-color: lightgrey;
+	color: #000305;	/*Color Black*/
+	font-size: 87.5%;	/*<--size of text!!*/ /*Base size of font is 14px;*/
+	font-family: Arial, "Lucida Sans Unicode";	-->Type of font
+	line-height: 1.5;	/*-->Height of line!!*/
+	text-align: left;
+}
+a {
+	text-decoration: none;	/*<--Will remove underlines in links!!*/
+}
+a:link, a:visited {
+	color: #CF5C3F; 		/*Orange*/
+}
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #FFF;
+}
+.body {
+	margin: 0 auto;
+	width: 70%;	/*<--Sets the page to 70% of page!! Works similarly to container!!*/
+	clear: both;	/*<--If there is an image/logo, text will go under it.. not following the text above!! (No floated elements)*/
+}
+.mainheader img {
+	width: 30%;
+	height: auto;
+	margin: 2% 0;
+}
+.mainheader nav {
+	background-color: #666; /*Color Dark Grey*/
+	height: 40px;
+	border-radius: 5px;	/*<--Makes the edges round!!*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.mainheader nav ul {
+	list-style:none; /*Removes bullet points*/
+	margin: 0 auto;
+}
+.mainheader nav ul li {
+	float: left;
+	display: inline;	/*<--Makes the list in one line!!*/
+}
+.mainheader nav a:link, .mainheader nav a:visited {		/*<--When you visit a link!!*/
+	color: #FFF;	
+	display: inline-block;	/*<--Work in menu bar only!!*/
+	padding: 10px 25px;	/*<--Space (First: Top, bottom...Second: Left, right)*/
+	height: 20px;	/*<--The height of the link!!*/
+}
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
+	background-color: #CF5C3F;	/*<--Color orange!!*/
+	text-shadow: none;
+}
+.mainheader nav ul li a {		/*Always follow the order!!*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;	/*For mozilla firefox*/
+	-webkit-border-radius: 5px;		/*For webkit browsers*/
+}
+.mainContent {
+	line-height: 25px;	/*Height of the line*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+}
+.content {
+	width: 70%;
+	float: left;
+}
+.topContent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	padding: 3% 5%;		/*To add space between content, use padding!*/
+	margin-top: 3%;
+}
+.bottomContent {
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	padding: 3% 5%;
+	margin-top: 2%;
+}
+.post-info {
+	font-style: italic;
+	color: #999;	/*Color Light Grey*/
+	font-size: 85%;
+}
+.top-sidebar { 		/*To make sidebar next to content, remove overflow:hidden in whole body!!*/
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	margin: 2% 0 2% 3%;
+	padding: 2% 3%;
+}
+.middle-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+.bottom-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+.mainFooter {
+	width: 100%;
+	float: left;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin-top: 2%;
+}
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;	/*<--Color white!!*/
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px)		/*Applies to the whole page!!: Should put under {}*/
+{
+	.body {
+		width: 90%;	/*<--Sets the page to 90% of page!! Works similarly to container!!*/
+		font-size: 95%;
+	}
+	.mainheader img {
+		width: 100%;	/*Makes the img 100% when screen is smaller!*/
+	}
+	.mainheader nav {
+		height: 160px; 	/* 40px * 4= Makes Nav bar list on top of each other*/
+	}
+	.mainheader nav ul {
+		padding-left: 0;
+	}
+	.mainheader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+	.mainheader nav a:link, .mainheader nav a:visited {		/*<--When you visit a link!!*/
+		padding: 10px 25px;	/*<--Space (First: Top, bottom...Second: Left, right)*/
+		height: 20px;	/*<--The height of the link!!*/
+		display: block;		/*Covers the entire space of the link...Not just the link itself!!*/
+	}
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+	.post-info {
+		display:none;
+	}
+	.topContent {
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		overflow: hidden;
+		padding: 3% 5%;		/*To add space between content, use padding!*/
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+	.bottomContent {
+		margin-top: 3%;
+	}
+	.top-sidebar { 		/*To make sidebar next to content, remove overflow:hidden in whole body!!*/
+	width: 94%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	margin: 2% 0 2% 0%;
+	padding: 2% 3%;
+	}
+	.middle-sidebar {
+		width: 94%;
+		float: left;
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		margin-top: 1%;
+		margin-left: 0;
+		margin-bottom: 2%;
+		padding: 2% 3%;
+	}
+	.bottom-sidebar {
+		width: 94%;
+		float: left;
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;	
+		-webkit-border-radius: 5px;
+		margin-top: 1%;
+		margin-left: 0;
+		margin-bottom: 2%;
+		padding: 2% 3%;
+	}
+}

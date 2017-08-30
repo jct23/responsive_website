@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">		<!--Making a comment on HTML-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title>Responsive Website Tutorial</title>			<!--Goes on the tab of web browser!!-->
+	<link type="text/css" rel="stylesheet" href= "stylerendex.css">
+</head>
+
+<body class="body">
+	<header class="mainheader">
+		<img src="https://www.ccsidbb.catholic.edu.au/private/_lib/editor/editor/templates/images/ph-640x360.gif" alt="picture holder">
+			
+		<nav>
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+	<div class="mainContent">
+		<div class="content">
+			<article class="topContent">
+				<header>
+					<h2><a href="#" title="firstPost">First Post</a></h2>
+				</header>
+					
+				<footer>
+					<p class="post-info">This post is written by Christian</p>
+				</footer>
+					
+				<content>  
+					<p>Lorem ipsum dolor sit amet, duo ei malis equidem, ex vix posse delicata. 
+					Eu sit graecis adolescens necessitatibus, cum putent oporteat dissentiunt cu. 
+					Iracundia adipiscing moderatius eos te, quo iriure adversarium et, ad oporteat persequeris efficiantur nam. 
+					An mea debet honestatis inciderint, ei quo epicuri definitionem conclusionemque. 
+					Te nec adhuc commodo eripuit. Qui assum labores ad, has ei quas constituam.</p>
+						
+					<p>Ius falli recteque maiestatis cu, consul postea pro ea. Ne omnis tritani qui. Percipit inimicus mel ad. 
+					Dolor sadipscing duo te, vix ei posse paulo tincidunt. Audiam luptatum id mea, nam dicit hendrerit eloquentiam te, 
+					an dicta sanctus adipiscing vis. Eirmod legimus et pro, elit nihil oporteat ea mei.</p>
+				</content>
+			</article>
+				
+			<article class="bottomContent">
+				<header>
+					<h2><a href="#" title="secondPost">Second Article</a></h2>
+				</header>
+					
+				<footer>
+					<p class="post-info">This post is written by Joseph</p>
+				</footer>
+					
+				<content>
+					<p>Lorem ipsum dolor sit amet, duo ei malis equidem, ex vix posse delicata. 
+					Eu sit graecis adolescens necessitatibus, cum putent oporteat dissentiunt cu. 
+					Iracundia adipiscing moderatius eos te, quo iriure adversarium et, ad oporteat persequeris efficiantur nam. 
+					An mea debet honestatis inciderint, ei quo epicuri definitionem conclusionemque. 
+					Te nec adhuc commodo eripuit. Qui assum labores ad, has ei quas constituam.</p>
+						
+					<p>Ius falli recteque maiestatis cu, consul postea pro ea. Ne omnis tritani qui. Percipit inimicus mel ad. 
+					Dolor sadipscing duo te, vix ei posse paulo tincidunt. Audiam luptatum id mea, nam dicit hendrerit eloquentiam te, 
+					an dicta sanctus adipiscing vis. Eirmod legimus et pro, elit nihil oporteat ea mei.</p>
+				</content>
+			</article>
+		</div>
+	</div>
+		
+	<aside class="top-sidebar">
+		<article>
+			<h2>Top Sidebar</h2>
+			<p>Malis dicit complectitur eos in, oportere disputando ne quo, mei libris efficiendi dissentiunt cu. Pri labitur gubergren eu. 
+			Quas denique cu est, an ius sint malorum persequeris. An amet pertinax invenire sit, justo civibus postulant quo no. Tota graecis 
+			consetetur id has, ei dictas patrioque reformidans pro, est no velit nominati qualisque.</p>
+		</article>
+	</aside>
+		
+	<aside class="middle-sidebar">
+		<article>
+			<h2>Middle Sidebar</h2>
+			<p>Malis dicit complectitur eos in, oportere disputando ne quo, mei libris efficiendi dissentiunt cu. Pri labitur gubergren eu. 
+			Quas denique cu est, an ius sint malorum persequeris. An amet pertinax invenire sit, justo civibus postulant quo no. Tota graecis 
+			consetetur id has, ei dictas patrioque reformidans pro, est no velit nominati qualisque.</p>
+		</article>
+	</aside>
+		
+	<aside class="bottom-sidebar">
+		<article>
+			<h2 class="at">Bottom Sidebar</h2>
+			<p class="b">Malis dicit complectitur eos in, oportere disputando ne quo, mei libris efficiendi dissentiunt cu. Pri labitur gubergren eu. 
+			Quas denique cu est, an ius sint malorum persequeris. An amet pertinax invenire sit, justo civibus postulant quo no. Tota graecis 
+			consetetur id has, ei dictas patrioque reformidans pro, est no velit nominati qualisque.</p>
+		</article>
+	</aside>
+		
+	<footer class="mainFooter">
+		<p>Copyright &copy; 1stWebDesign &trade;</p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("p").css("color","blue");
+			$(".at").on("click",function(){$(".b").toggle();});
+			$("li").on("click",function(){$(this).next().toggle();});		//this has no " "!!
+			$("a").on("click",function() {$("a").attr("href","http://www.google.com");});	//Change attribute!!
+		});
+	</script>
+</body>
+</html>
