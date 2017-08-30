@@ -108,6 +108,8 @@
 			$(".at").on("click",function(){$(".b").toggle();});
 			$("li").on("click",function(){$(this).next().toggle();});		//this has no " "!!
 			$("a").on("click",function() {$("a").attr("href","http://www.google.com");});	//Change attribute!!
+			$("aside").last().hide();
+			$("aside").last().show();	//DOM Traversal
 		});
 	</script>
 </body>
